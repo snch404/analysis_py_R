@@ -1,0 +1,12 @@
+Lab Assignment - Day 2 (CSE3172)
+1. (a) Write a program to find out GCD of two numbers using function.
+   (b) Using recursion.
+   (c) Find out the GCD of n numbers.
+2. (a) Find out the factorial of a number using iterative method.
+   (b) Using recursion.
+3. (a) Print Fibonacci series up to n numbers.
+   (b) Using recursion.
+4. Find out the sum of the digits of a number provided as command line argument.
+5. Find out the maximum and minimum number among n numbers. Use the concept of variable argument list.
+6. By using the concept of default arguments, accept sides of a triangle (for three sides take default values) and
+   check the type of triangle and find out area of the triangle.

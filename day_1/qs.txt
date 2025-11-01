@@ -1,0 +1,41 @@
+1. Write a program that prompts the user to enter two integers and display their sum on the screen.
+2. Write a program add.py that takes 2 numbers as command line arguments and prints its sum.
+3. Write a program that prompts the user to input a Celsius temperature and outputs the equivalent temperature in Fahrenheit. The formula to convert the temperature is: F = 9/5*C + 32 where F is the Fahrenheit temperature and C is the Celsius temperature.
+4. Write a program which accept two variables through command line and demonstrates the use of the relational operators ($<$$, >$$, <=$$, >=$$, ==$$, !=$$), identity operator(is, is not), membership operators (in, not in).
+5. Write a program to determine whether a person is eligible to vote or not. if he/she is not eligible, display how many years are left to be eligible.
+6. Write a program to find the maximum, minimum and average of three numbers.
+7. Write a program that accepts seconds from keyboard as Integer. Your program should convert seconds in hours, minutes and seconds. Your output should like this :
+   Enter seconds: 13400
+   Hours: 3
+   Minutes: 43
+   Seconds: 20
+8. Finding the distance between two points whose coordinates are given
+   Take coordinates of two points (in two dimension) from the user giving prompt. 
+   find out the distance between the given points using the standard formula. 
+   Display the distance to the user in appropriate format.
+   Sample Input and Output:
+   Enter x-coordinate1: 0
+   Enter y-coordinate1: 0
+   Enter x-coordinate2: 3
+   Enter y-coordinate2: 4
+   The distance is 5.0
+9. Vivek went to a movie with his friends in a theatre and during break time he bought pizzas, puffs and cool drinks. Consider the following prices -> Rs.100/pizza -> Rs.20/puffs -> Rs.10/cool drink
+   Generate a bill for what Vivek has bought.
+   Sample Input 1:
+   -> Enter the no of pizzas bought: 10
+   -> Enter the no of puffs bought: 12
+   -> Enter the no of cool drinks bought: 5
+   Sample Output 1:
+   Bill Details
+   -> No of pizzas: 10
+   -> No of puffs: 12
+   -> No of cooldrinks: 5
+   -> Total price: 1290
+   ENJOY THE SHOW!!
+10. Finding the roots of a quadratic equation
+    Take the coefficients a, b, and c of a quadratic equation ax^2+bx+c=0 from the user.
+    Find the roots (could be real & equal, real & unequal, or complex conjugate). 
+    Display the roots to the user in a proper format. 
+    Make at least 3 attempts to input the values of a, b, and c such that all the above three cases arise.
+11. Write one program for Calculator, which has options for addition, multiplication, division, Subtraction.
+    Use if else statement for menu driven program.

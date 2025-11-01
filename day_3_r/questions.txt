@@ -1,0 +1,24 @@
+Lab Assignment on R Language
+
+1. Write a program that prompts the user to enter two integers and display their sum on the screen.
+2. Write a program that prompts the user to input a Celsius temperature and outputs the equivalent temperature in Fahrenheit. 
+   The formula to convert the temperature is: $F = 9/5\ C + 32$ where F is the Fahrenheit temperature and C is the Celsius temperature.
+3. Write a program to determine whether a person is eligible to vote or not. 
+   If he/she is not eligible, display how many years are left to be eligible.
+4. Finding the distance between two points whose coordinates are given. Take coordinates of two points (in two dimension) from the user giving prompt. Find out the distance between the given points using the standard formula. Display the distance to the user in appropriate format.
+   
+   Sample Input and Output:
+   Enter x-coordinate1:0
+   Enter y-coordinate1:0
+   Enter x-coordinate2:3
+   Enter y-coordinate2:4
+   The distance is 5.0
+5. Finding the roots of a quadratic equation. Take the coefficients a, b, and c of a quadratic equation 
+   $ax^2 + bx + c = 0$ from the user. Find the roots (could be real & equal, real & unequal, or complex conjugate). 
+   Display the roots to the user in a proper format. Make at least 3 attempts to input the values of a, b, and c such that all the above three cases arise.
+6. Write a function to find out the GCD of two numbers using:
+   (a) Iteration (b) Recursion
+   Test your code by taking 2 numbers from the user (e.g. [15, 65] and [15, 75]).
+7. Write a function to find out the GCD of n numbers. Test the function with the list [39, 91, 104, 143]
+8. Write a function to find out the factorial of a number using (a) iteration and (b) recursion
+9. Write a function to find out the Fibonacci Series upto n numbers using (a) iteration and (b) recursion

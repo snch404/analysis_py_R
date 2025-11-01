@@ -1,0 +1,6 @@
+a=eval(input("Enter first number: "))
+b=eval(input("Enter second number: "))
+c=eval(input("Enter third number: "))
+print("Maximum is:",max(a,b,c))
+print("Minimum is:",min(a,b,c))
+print("Average is:",(a+b+c)/3)

@@ -1,0 +1,7 @@
+s=int(input("Enter the total time in seconds:"))
+h=int(s/3600)
+print("Hours:", h)
+m=int((s%3600)/60)
+print("Minutes:", m)
+s=int(s%60)
+print("Seconds:", s)

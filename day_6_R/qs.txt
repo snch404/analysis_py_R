@@ -1,0 +1,56 @@
+Lab Assignment: R Programming (CSE3172)
+1. Write a R program to create a vector of a specified type and length. Create a vector of numeric,
+   complex, logical, and character types of length 6.
+
+2. Accept user input to populate the specific vector.
+a. Prepare the following data frame.
+
+ID	Name	Sub1	Sub2	Sub3
+1	AAA	56	57	58
+2	BBB	78	70	78
+3	CCC	90	70	70
+4	DDD	65	70	50
+5	EEE	90	97	90
+
+b. Add new column Total and Average in the data frame.
+
+c. Add a new column Grade based on the following criteria:
+
+if(average >= 90): grade = 'O'
+
+if(average < 90 and average >= 80): grade = 'A'
+
+if(average < 80 and average >= 70): grade = 'B'
+
+if(average < 70 and average >= 60): grade = 'C'
+
+if(average < 60 and average >= 50): grade = 'D'
+
+else: grade = 'F'
+
+d. Sort the Dataframe based on grade so that you can see the topper at the top.
+
+3. Use "marks_student2.csv". Answer the following questions:
+(a) Find out the number of columns and their names. How many students are there?
+
+(b) How many are male students and how many are female students?
+
+(c) Filter out A values from both test marks and reassign 0 in case of A.
+
+(d) How many students scored more than 20 in total, ignore NA?
+
+(e) Compute the percentage of students getting more than 60% considering 25 as the total marks, 
+    ignore NA.
+
+4. From the dataframe given in question 2, find out the mean, median, standard deviation, and 
+   variance of the marks obtained in each of the subjects and display in a tabular format.
+
+5. Modify the dataframe such that the following marks are missing:
+
+Sub2 for BBB
+
+Sub3 for DDD
+
+Sub1 for EEE
+
+6. What will be the output if the missing values in the dataset are ignored?

@@ -1,0 +1,38 @@
+Lab Assignment
+
+1. You are given a string S. Write a function count_letters which will return a dictionary
+    containing letters (including special character) in string S as keys and their count 
+    in string S as values.
+
+2. For the given file, i.e open any python file and count the total number of lines that 
+    contain def or for as whole words.
+
+3. Read one string txt=' Hello hello students of CSE2025' and do the following operations:
+   #Find all lower case characters alphabetically between "a" and "m":
+   #Find all lowercase character which excludes [a-m]
+   #Find all digit characters:
+   #Search for a sequence that starts with "he", followed by two (any) characters, and an 
+   "o":
+   #Search for a sequence that starts with "he", followed by 0 or more (any) characters, 
+   and an o:
+   #Search for a sequence that starts with "he", followed by 1 or more (any) characters, 
+   and an o:
+   #Search for a sequence that starts with "He", followed exactly 2 (any) characters, 
+   and an o:
+
+4. Create a text file test.txt with the following sentences. This is a lab assignment based
+    on Regular expression. I am doing it. This is very easy. This is very helpful for 
+    understanding Regular expression. Write a python code which will read test.txt file 
+    and find all lines those start with This. Copy those lines into a new file dest.txt by 
+    substituting the word This with That.
+
+5. Write a Python code using Regular Expression to check whether the password given by the 
+    user follows a set of rules:
+   (i) There must be at least 8 characters
+   (ii) There must be at least 1 small letter
+   (iii) There must be at least 1 capital letter
+   (iv) There must be at least 1 numeral
+   (v) There must be at least 1 special character
+   Take new password from the user with proper prompt. Display message to the user, 
+   depending on whether the password is correct or not. If incorrect, display the type(s) 
+   of errors.

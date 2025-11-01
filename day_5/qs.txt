@@ -1,0 +1,95 @@
+Q1 Write a Python code to do the following:
+(i) Create a class with the name "Library".
+(ii) Define two class variables to indicate the number of books in the library and the number of library users respectively. Define another class variable to indicate the total price of books in the library.
+(iii) Define the Constructor which would initialize the instance of the class "Library" with Name of the Book, Price of the Book, and the Name of the User (depending on whether the user name is Null or the book name is Null). This would also update the count of the book and the user, as the case may be. The Total price of the books in the library will also be updated.
+(iv) Define two functions to display the details of the book (name and price) or the details of the user (name only).
+(v) Now take input from the user (names and prices of books) and initialize instances of the class.
+(vi) Also, take input from the user (names of the users) and initialize an instance of the class.
+(vii) Now use functions defined by you to display the details of the book (name and price) and the details of the user (name only).
+(viii) Also display the total numbers of users, total numbers of books and total price of books in the library.
+
+Q2 Write a program that has a class Student that stores stid, name, and marks of three subjects, 
+    Average marks and Grade of the students. The class has two variables college_name which stores the name 
+    of the college and student_count which gives information about the total number of students. Display 
+    college_name, total number of students, Student information along with all marks and print Grade based on 
+    average Marks.
+
+if (average >= 90): grade='O'
+
+if (average < 90 and average > 80): grade='A'
+
+if (average < 80 and average >= 70): grade='B'
+
+if (average < 70 and average >= 60): grade='C'
+
+if (average < 60 and average >= 50): grade='D'
+
+else: grade='F'
+
+Sample Output:
+College Name: RITK
+Total Numbers of Students are: 5
+
+ID	Name	Sub1	Sub2	Sub3	Average	Grade
+1	AAA	90	90	90	90.0	O
+2	BBB	70	70	70	70.0	B
+3	CCC	10	30	40	26.67	F
+4	DDD	5	50	50	35.0	F
+5	EEE	56	57	58	57.0	D
+
+Export to Sheets
+Q3 Write a python program to implement a class Point with x, y as instance variables.
+
+Use of special function (double underscore or magic methods):
+
+__str__ to print object
+
+__add__, __sub__ to perform addition and subtraction between two objects
+
+__mul__, __truediv__, __floordiv__ to perform multiplication, division and integer division between objects and any integer number
+
+__pow__ to find the nth power of x and y component of object
+
+__lt__, __eq__, __gt__ to compare two objects
+
+Sample Output:
+The first object is: (41,50)
+The second object is: (2,3)
+The sum of (41,50) and (2,3) is (43,53)
+The difference of (41,50) and (2,3) is (39,47)
+The product of (41,50) and 5 is (205,250)
+The division of (41,50) and 5 is (8.2,10.0)
+The integer division of (41,50) and 5 is (8,10)
+The modulus of (41,50) and 5 is (1,0)
+The Power of 3 of (2,3) is (8,27)
+
+(41,50) = (2,3) is False
+(41,50) >= (2,3) is True
+(41,50) <= (2,3) is False
+(41,50) > (2,3) is True
+(41,50) < (2,3) is False
+
+Q4 Write a program with class Employee that keeps a track of the number of employees in an organization and
+   stores their name, designation, and salary details.
+
+Q5 Write a program that has class Person (name, age, gender). Create another class Publication (no_rp, no_book, no_art). Now inherit a class Faculty(desig, dept) from Person and Publication to print the faculty information.
+
+no_rp: No of research papers published
+
+no_book: No of book chapters published
+
+no_art: No of articles published
+
+desig: Designation
+
+dept: Department
+
+Sample Output:
+Name of faculty: Pooja Sinha
+Age: 48
+Gender: Female
+Designation: HOD
+Department: CSE
+No of research papers published: 5
+No of book chapters published: 2
+No of articles published: 3

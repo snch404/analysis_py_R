@@ -1,0 +1,26 @@
+Lab Assignment
+
+1. Open a existing file and count number of lines and no of characters available in the file.
+
+2. Using some Editor, create a text file (name: cities.txt) containing names of 10 cities viz. 
+   Kolkata, Delhi, Mumbai, Chennai, Bengaluru, Patna, Lucknow, Hyderabad, Gandhinagar and Srinagar, one in each line. 
+   Now take source file name and destination file name from the user. 
+   Use exception handling to report "FileNotFoundError", if any, for the source file. 
+   Copy the source text file to the destination.
+
+3. Accept two numbers number1 and number2 from user separated by comma, 
+   find out division of two numbers by using try - except block. 
+   Handle ZeroDivisionError, SyntaxError if inputs are not separated by comma.
+
+4. Create two user defined exceptions as TooHot and TooCold. 
+   Write a python program which will accept temperature from user and display entered temperature if 
+   it is within range 20 to 40 degrees and throw TooHot if the temperature exceeds 40 degrees and throw 
+   TooCold if the temperature is less than 20 degrees.
+
+5. Write a Python program to first take an integer number (x), where 1 <= x <= 255, from the user 
+   by using the prompt "Number of registers in the CPU:". 
+   Use try-except block to wait indefinitely until the given input is an integer.
+   Check the validity of the range of the input in a user defined function "check_range". 
+   Now, call a function 'find_n' to find out a positive number (n) such that $2n$ is the least integer 
+   greater than or equal to x. Display the value of n with prompt "The number of bits for the Register 
+   field in the Instruction format is:"
