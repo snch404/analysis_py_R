@@ -1,35 +1,27 @@
 import pandas as pd
 
-# --------------------------------------------------
-# 1️⃣ Create a Series from a dictionary
-# --------------------------------------------------
-data_dict = {'a': 100, 'b': 200, 'c': 300, 'd': 400, 'e': 800}
-series1 = pd.Series(data_dict)
+# ----- Part 1: Series -----
+# Create a Series from a dictionary
+data = {'a': 100, 'b': 200, 'c': 300, 'd': 400, 'e': 800}
+s1 = pd.Series(data)
 print("Original Series:")
-print(series1)
-print("-" * 60)
+print(s1)
 
-# --------------------------------------------------
-# 2️⃣ Create another Series with custom index order
-# --------------------------------------------------
-series2 = pd.Series(data_dict, index=['d', 'b', 'e', 'a'])
-print("New Series with custom index ['d', 'b', 'e', 'a']:")
-print(series2)
-print("-" * 60)
+# Create another Series with custom index order
+s2 = pd.Series(data, index=['d', 'b', 'e', 'a'])
+print("\nSeries with given index order:")
+print(s2)
 
-# --------------------------------------------------
-# 3️⃣ Check for null and non-null values
-# --------------------------------------------------
-print("Check for NULL values (isnull):")
-print(series2.isnull())
-print("\nCheck for NOT NULL values (notnull):")
-print(series2.notnull())
-print("-" * 60)
+# Check for null and non-null values
+print("\nChecking for null values:")
+print(s2.isnull())
 
-# --------------------------------------------------
-# 4️⃣ Create a DataFrame from dictionary of marks
-# --------------------------------------------------
-data = {
+print("\nChecking for non-null values:")
+print(s2.notnull())
+
+# ----- Part 2: DataFrame -----
+# Create DataFrame from a dictionary
+marks_data = {
     'ID': [1, 2, 3, 4, 5],
     'Name': ['AAA', 'BBB', 'CCC', 'DDD', 'EEE'],
     'Physics': [56, 70, 90, 65, 96],
@@ -37,20 +29,15 @@ data = {
     'Mathematics': [58, 70, 70, 50, 98]
 }
 
-df = pd.DataFrame(data)
-print("Original DataFrame:")
+df = pd.DataFrame(marks_data)
+print("\nOriginal DataFrame:")
 print(df)
-print("-" * 60)
 
-# --------------------------------------------------
-# 5️⃣ Add Total and Average columns
-# --------------------------------------------------
-df['Total'] = df[['Physics', 'Chemistry', 'Mathematics']].sum(axis=1)
+# Add Total and Average columns
+df['Total'] = df['Physics'] + df['Chemistry'] + df['Mathematics']
 df['Average'] = df['Total'] / 3
 
-# --------------------------------------------------
-# 6️⃣ Add Grade column based on Average
-# --------------------------------------------------
+# Add Grade column based on Average
 def assign_grade(avg):
     if avg >= 90:
         return 'O'
@@ -67,5 +54,5 @@ def assign_grade(avg):
 
 df['Grade'] = df['Average'].apply(assign_grade)
 
-print("DataFrame with Total, Average, and Grade:")
+print("\nDataFrame after adding Total, Average, and Grade:")
 print(df)

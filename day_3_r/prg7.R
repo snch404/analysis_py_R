@@ -1,28 +1,23 @@
-# Recursive GCD function
-gcd <- function(a, b) {
-  if (b == 0) {
+gcd<-function(a,b){
+  if(b==0) {
     return(a)
   }
-  return(gcd(b, a %% b))
-}
-
-# Input list
-l <- c()
-n <- as.integer(readline("Enter number of elements: "))
-for (i in 1:n) {
-  num <- as.integer(readline(paste("Enter element", i, ": ")))
-  l <- c(l, num)
-}
-
-# Function to find GCD of the list
-gcd_num <- function(l) {
-  n_val <- gcd(l[1], l[2])
-  if (length(l) > 2) {
-    for (i in 2:length(l)) {
-      n_val <- gcd(n_val, l[i])
-    }
+  else {
+    return(gcd(b,a%%b))
   }
-  return(n_val)
+}
+l<-c()
+n<-as.integer(readline("Enter the no. of elements:"))
+for(i in 1:n){
+  num<-as.integer(readline("Enter element:"))
+  l<-c(l,num)
 }
 
-cat("GCD of the list is:", gcd_num(l), "\n")
+gcd_num<-function(l){
+  v=gcd(l[1],l[2])
+  for(i in 3:length(l)){
+    v=gcd(v,l[i])
+  }
+  return(v)
+}
+cat("GCD of list is:",gcd_num(l))

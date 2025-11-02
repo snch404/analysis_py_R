@@ -1,15 +1,15 @@
 import numpy as np
 
 # Step 1: Take user input to create a 4x3 matrix
-rows, cols = 4, 3
-print(f"Enter {rows * cols} integer elements for a {rows} x {cols} matrix (row-wise):")
+r, c = 4, 3
+print(f"Enter {r * c} integer elements for a {r} x {c} matrix (row-wise):")
 
-elements = []
-for i in range(rows * cols):
+ele = []
+for i in range(r * c):
     val = float(input(f"Element {i + 1}: "))
-    elements.append(val)
+    ele.append(val)
 
-m = np.array(elements).reshape(rows, cols)
+m = np.array(ele).reshape(r, c)
 print("\nOriginal Matrix (m):\n", m)
 
 # Step 2: Find the column mean
@@ -18,8 +18,8 @@ print("\nColumn Mean (cm):\n", cm)
 print("Shape of column mean:", cm.shape)
 
 # Step 3: Demean the columns (subtract column mean from each element)
-demeancol = m - cm
-print("\nDemeaned Matrix (m - cm):\n", demeancol)
+dm = m - cm
+print("\nDemeaned Matrix (m - cm):\n", dm)
 
 # Step 4: Explain Broadcasting
 print("\n--- Broadcasting Explanation ---")

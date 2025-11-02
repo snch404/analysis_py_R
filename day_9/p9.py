@@ -28,26 +28,26 @@
 
 import pandas as pd
 
-# Step 1: Create Series with default index
-data = pd.Series([10, 20, 30, 40])
+# Step 1: Create a one-dimensional array-like object (Series)
+data = [10, 20, 30, 40]
+s = pd.Series(data)
 print("Original Series:")
-print(data)
-print("-" * 50)
+print(s)
 
-# Step 2: Change index safely
-data = data.set_axis(['d', 'b', 'a', 'c'])
-print("Series with New Index:")
-print(data)
-print("-" * 50)
+# Step 2: Change the index to new labels
+s.index = ['d', 'b', 'a', 'c']
+print("\nSeries with new index:")
+print(s)
 
-# Step 3: Update a value
-data.loc['b'] = 25
-print("After updating index 'b' to 25:")
-print(data)
-print("-" * 50)
+# Step 3: Update data points using new indices
+s['d'] = 15
+s['b'] = 25
+print("\nUpdated Series:")
+print(s)
 
-# Step 4: Fancy indexing
-print("Fancy Indexing Examples:")
-print("Values at ['d', 'a']:\n", data.loc[['d', 'a']])
-print("\nValues at ['c', 'b', 'd']:\n", data.loc[['c', 'b', 'd']])
-print("\nSliced from 'b' to 'c':\n", data.loc['b':'c'])
+# Step 4: Fancy indexing examples
+print("\nFancy indexing (select 'a' and 'c'):")
+print(s[['a', 'c']])
+
+print("\nFancy indexing (select using index list ['c', 'b', 'd']):")
+print(s[['c', 'b', 'd']])

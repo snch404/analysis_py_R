@@ -1,6 +1,6 @@
 fib_iterative <- function(n) {
   if (n <= 0) {
-    return((0))  # Empty vector for non-positive n
+    return(numeric(0))  # truly empty vector
   }
   if (n == 1) {
     return(c(0))
@@ -10,9 +10,12 @@ fib_iterative <- function(n) {
   fib[1] <- 0
   fib[2] <- 1
   
-  for (i in 3:n) {
-    fib[i] <- fib[i-1] + fib[i-2]
+  if (n >= 3) {
+    for (i in 3:n) {
+      fib[i] <- fib[i-1] + fib[i-2]
+    }
   }
+  
   return(fib)
 }
 

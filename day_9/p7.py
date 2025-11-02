@@ -1,8 +1,8 @@
 import numpy as np
 
 # Create two NumPy arrays
-arr1 = np.array([10, 20, 30, 40, 50])
-arr2 = np.array([15, 20, 25, 40, 60])
+arr1 = np.array([10, 20, 30, 40])
+arr2 = np.array([15, 20, 25, 40])
 
 print("Array 1:", arr1)
 print("Array 2:", arr2)
